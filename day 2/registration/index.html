@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Student Registration</h1>
+    <form id="registrationForm" novalidate>
+        <p><label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required></p>
+        <p><label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" required></p>
+        <p><label for="Branch">Branch:</label>
+            <input type="text" id="Branch" name="Branch" required></p>
+        <p><label for="Course">Course:</label>
+            <input type="text" id="Course" name="Course" required></p>
+        <p><label for="Section">Section:</label>
+            <input type="text" id="Section" name="Section" required></p>
+        <p><label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required></p>
+        <p><label for="Confirm_Password">Confirm Password:</label>
+            <input type="password" id="Confirm_Password" name="Confirm_Password" required></p>
+        <p id="message" role="alert" aria-live="polite"></p>
+        <button type="submit">Register</button>
+    </form>
+    <section id="userDetails" hidden>
+        <h2>Registered User Details</h2>
+        <p>Name: <span id="outputName"></span></p>
+        <p>Email: <span id="outputEmail"></span></p>
+        <p>Branch: <span id="outputBranch"></span></p>
+        <p>Course: <span id="outputCourse"></span></p>
+        <p>Section: <span id="outputSection"></span></p>
+
+    </section>
+    <script src="index.js"></script>
+</body>
+
+</html>
